@@ -1,6 +1,6 @@
 import { NextApiHandler, NextApiRequest, NextApiResponse } from "next"
 import React, { ChangeEvent, useState } from "react"
-import { FaRegImage } from "react-icons/fa6"
+
 import { Label } from "./Label"
 import { BaseUseStateOptions } from "./utils"
 
@@ -10,6 +10,8 @@ interface ImageUploadState {
     status: "untouched" | "uploading" | "success" | "error"
     _private_setStatus: React.Dispatch<"untouched" | "uploading" | "success" | "error">
 }
+
+const FaRegImage = () => <></>
 
 interface ImageUploadProps {
     state: ImageUploadState

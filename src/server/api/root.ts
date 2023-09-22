@@ -1,4 +1,3 @@
-import { exampleRouter } from "~/server/api/routers/example";
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 import { posingurlRouter } from "./routers/posingurl";
 import { constantsRouter } from "./routers/constants";
@@ -9,7 +8,6 @@ import { constantsRouter } from "./routers/constants";
  * All routers added in /api/routers should be manually added here.
  */
 export const appRouter = createTRPCRouter({
-  example: exampleRouter,
   posingurl: posingurlRouter,
   constants: constantsRouter,
 });
